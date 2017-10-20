@@ -23,15 +23,17 @@ public class PageRank {
             {new Fraction(1,3).doubleValue(),0,new Fraction(1,3).doubleValue(),new Fraction(1,2).doubleValue(),0},
     };
 
+
+
+
+
         Gauss gauss = new Gauss(t);
 
         double matrice[][] = gauss.getMatrice();
 
-        for(int i=0; i < matrice.length; i++)
-            for(int j=0; j < matrice.length; j++)
-                System.out.println(matrice[i][j]);
 
 
 
+        gauss.afficher();
     }
 }

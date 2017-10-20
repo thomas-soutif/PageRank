@@ -1,60 +1,82 @@
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import sun.security.jca.GetInstance;
+
+import java.util.Arrays;
 
 public class Gauss {
 
     private double matrice[][];
 
 
-    public Gauss(double copie[][])
-    {
+    public Gauss(double copie[][]) {
         matrice = new double[copie.length][copie.length];
 
-        for(int i=0; i < copie.length; i++)
-            for(int j=0; j < copie.length; j++)
+        for (int i = 0; i < copie.length; i++)
+            for (int j = 0; j < copie.length; j++)
                 matrice[i][j] = copie[i][j];
 
 
         remplirDiagonale();
 
-        for(int i = 0; i < matrice.length-1; i++ )
-            for(int j = i+1; j < matrice.length-1; j++ )
-            {
-                double coeff = getCoeff(i,j);
-                appliquerPivot(i,coeff,j);
+        for (int m = 0; m < matrice.length ; m++) {
+            for (int i = m + 1; i < matrice.length; i++) {
+                double coeff = getCoeff(i, m);
+                appliquerPivot(i, coeff, m);
             }
+        }
 
 
     }
 
-    private void remplirDiagonale()
-    {
+    private void remplirDiagonale() {
 
-        for(int i =0; i < matrice.length; i++)
+        for (int i = 0; i < matrice.length; i++)
             matrice[i][i] -= 1;
     }
 
-    private double getCoeff(int i, int j)
-    {
-        if(matrice[i][i] != 0)
-            return (-(matrice[i][j] / matrice[i][i]));
+    private double getCoeff(int i, int m) {
+        if (matrice[m][m] != 0)
+            return (-(matrice[i][m] / matrice[m][m]));
         return 0;
     }
 
-    private void appliquerPivot(int i,double coeff, int j)
-    {
+    private void appliquerPivot(int i, double coeff, int m) {
 
-        for(int m = 0; m < matrice.length-1; m++)
-        {
-            if(matrice[i][m] != 0)
-                matrice[j][m] += coeff * matrice[i][m];
+        for (int j = 0; j < matrice.length; j++) {
+            if (matrice[m][j] != 0)
+                matrice[i][j] += coeff * matrice[m][j];
 
         }
 
     }
 
-    public double[][] getMatrice(){
+    public double[][] getMatrice() {
 
         return matrice;
     }
 
+   public void afficher(){
+
+       /* System.out.print("{");
+       for (int i = 0; i < matrice.length; i++)
+       {
+           System.out.print(",");
+           for (int j = 0; j < matrice.length; j++)
+           {
+               System.out.print(matrice[i][j]);
+           }
+
+       }*/
+
+       System.out.println("[");
+       for(int i =0; i < matrice.length; i++)
+       {
+           for(int j = 0; j < matrice.length; j++)
+               System.out.print(matrice[i][j] + ", ");
+
+           System.out.print("\n");
+       }
+       System.out.print("]");
+
+   }
 }
