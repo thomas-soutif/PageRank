@@ -57,17 +57,7 @@ public class Gauss {
 
    public void afficher(){
 
-       /* System.out.print("{");
-       for (int i = 0; i < matrice.length; i++)
-       {
-           System.out.print(",");
-           for (int j = 0; j < matrice.length; j++)
-           {
-               System.out.print(matrice[i][j]);
-           }
-
-       }*/
-
+        System.out.println("Matrice de gauss : ");
        System.out.println("[");
        for(int i =0; i < matrice.length; i++)
        {

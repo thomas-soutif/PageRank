@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2864114f-ed34-43f1-b5e4-6cceb4a452ea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ScoreRank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PageRank.class" afterPath="$PROJECT_DIR$/target/classes/PageRank.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Gauss.java" afterPath="$PROJECT_DIR$/src/main/java/Gauss.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PageRank.java" afterPath="$PROJECT_DIR$/src/main/java/PageRank.java" />
@@ -30,8 +32,8 @@
       <file leaf-file-name="PageRank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageRank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="216">
+              <caret line="26" column="96" lean-forward="true" selection-start-line="26" selection-start-column="96" selection-end-line="26" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +41,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ScoreRank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ScoreRank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Gauss.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Gauss.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="238">
+              <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +97,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Fraction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PageRank.java" />
         <option value="$PROJECT_DIR$/src/main/java/Gauss.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ScoreRank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageRank.java" />
       </list>
     </option>
   </component>
@@ -583,7 +596,7 @@
       <updated>1508404532045</updated>
       <workItem from="1508404533250" duration="86000" />
       <workItem from="1508488424387" duration="6056000" />
-      <workItem from="1508500763565" duration="3182000" />
+      <workItem from="1508500763565" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="create class gauss and implements method">
       <created>1508494667533</created>
@@ -592,11 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508494667533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gauss is working now, must ameliore the showing of the matrice">
+      <created>1508503995364</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508503995364</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9324000" />
+    <option name="totallyTimeSpent" value="10620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="31" width="1368" height="740" extended-state="6" />
@@ -640,7 +660,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create class gauss and implements method" />
-    <option name="LAST_COMMIT_MESSAGE" value="create class gauss and implements method" />
+    <MESSAGE value="gauss is working now, must ameliore the showing of the matrice" />
+    <option name="LAST_COMMIT_MESSAGE" value="gauss is working now, must ameliore the showing of the matrice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -729,18 +750,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Gauss.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="238">
+          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ScoreRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageRank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="26" column="96" lean-forward="true" selection-start-line="26" selection-start-column="96" selection-end-line="26" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
