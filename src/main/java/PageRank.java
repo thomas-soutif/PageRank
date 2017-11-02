@@ -1,6 +1,6 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.util.List;
+import Fonctions.Fraction;
+import Fonctions.Gauss;
+import Fonctions.ScoreRank;
 
 /**
  * Created by s16005532 on 19/10/17.
@@ -22,6 +22,8 @@ public class PageRank {
         double matrice[][] = gauss.getMatrice(); // on peut récuperer cette matrice dans une nouvelle variable.
         gauss.afficher(); // gauss contient toujours la matrice, donc on affiche son contenue .
 
+        System.out.println();
+        System.out.println();
 
        ScoreRank score = new ScoreRank(gauss.getMatrice()); // On passe le tableau de matrice pour construire le score.
         double tabScore[] = score.getScore(); // On peut récuperer le score dans un tableau
