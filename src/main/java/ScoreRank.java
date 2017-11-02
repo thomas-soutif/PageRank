@@ -5,22 +5,36 @@ public class ScoreRank {
 
     public ScoreRank(double[][] matrice)
     {
+        score = new double[matrice.length];
 
-        // Mettre la fonction SolveEquation ici
+        score[matrice.length-1] = 1;
+        System.out.println(score[matrice.length-1]);
+        for(int i = matrice.length-2; i >= 0; i--)
+        {
+
+            double res = 0;
+            for(int j=i+1; j < matrice.length; j++) {
+                res -= matrice[i][j] * score[j];
+            }
+            score[i] = res / matrice[i][i];
+
+        }
+
     }
-
-
 
     public void afficher(){
 
-        // Fonction pour afficher le contenue du tableau (optionnel mais vaut mieux qu'on sache ce qui a dedans :p)
+       for(int i=0; i < score.length; i++)
+           System.out.println("X"+ (i+1) + "=" + score[i]);
+
+
     }
 
     public double[] getScore(){
 
 
-        // Retourne le tableau de score
 
-        return null;
+
+        return score;
     }
 }
