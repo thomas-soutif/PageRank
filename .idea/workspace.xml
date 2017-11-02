@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2864114f-ed34-43f1-b5e4-6cceb4a452ea" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PageRank.java" afterPath="$PROJECT_DIR$/src/main/java/PageRank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ScoreRank.java" afterPath="$PROJECT_DIR$/src/main/java/ScoreRank.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageRank.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PageRank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageRank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
+            <state relative-caret-position="396">
               <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -39,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreRank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ScoreRank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ScoreRank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -597,7 +596,7 @@
       <workItem from="1508404533250" duration="86000" />
       <workItem from="1508488424387" duration="6056000" />
       <workItem from="1508500763565" duration="4478000" />
-      <workItem from="1509627492647" duration="3375000" />
+      <workItem from="1509627492647" duration="3456000" />
     </task>
     <task id="LOCAL-00001" summary="create class gauss and implements method">
       <created>1508494667533</created>
@@ -620,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509630749896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="show the score">
+      <created>1509630899480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509630899480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13995000" />
+    <option name="totallyTimeSpent" value="14076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -671,7 +677,8 @@
     <MESSAGE value="create class gauss and implements method" />
     <MESSAGE value="gauss is working now, must ameliore the showing of the matrice" />
     <MESSAGE value="The score is now return correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="The score is now return correctly" />
+    <MESSAGE value="show the score" />
+    <option name="LAST_COMMIT_MESSAGE" value="show the score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -815,21 +822,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ScoreRank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PageRank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="396">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ScoreRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -6,9 +6,7 @@ public class ScoreRank {
     public ScoreRank(double[][] matrice)
     {
         score = new double[matrice.length];
-
         score[matrice.length-1] = 1;
-        System.out.println(score[matrice.length-1]);
         for(int i = matrice.length-2; i >= 0; i--)
         {
 
@@ -17,7 +15,6 @@ public class ScoreRank {
                 res -= matrice[i][j] * score[j];
             }
             score[i] = res / matrice[i][i];
-
         }
 
     }
