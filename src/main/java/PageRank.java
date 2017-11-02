@@ -23,7 +23,10 @@ public class PageRank {
         gauss.afficher(); // gauss contient toujours la matrice, donc on affiche son contenue .
 
 
-        // A FAIRE :
-        // Implementer la fonction SolveEquation dans la classe ScoreRank (dans le constructeur)
+       ScoreRank score = new ScoreRank(gauss.getMatrice()); // On passe le tableau de matrice pour construire le score.
+        double tabScore[] = score.getScore(); // On peut récuperer le score dans un tableau
+
+        score.afficher();
+
     }
 }
