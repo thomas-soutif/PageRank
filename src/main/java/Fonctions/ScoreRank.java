@@ -1,3 +1,5 @@
+package Fonctions;
+
 public class ScoreRank {
 
     private double[] score; // stocker les scores dans ce tableau

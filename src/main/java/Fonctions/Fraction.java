@@ -1,6 +1,6 @@
+package Fonctions;
 
-
-    final class Fraction extends Number {
+public class Fraction extends Number {
         private int numerator;
         private int denominator;
 
