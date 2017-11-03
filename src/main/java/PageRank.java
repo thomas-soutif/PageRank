@@ -1,6 +1,11 @@
 import Fonctions.Fraction;
 import Fonctions.Gauss;
+import Fonctions.Pair;
 import Fonctions.ScoreRank;
+
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by s16005532 on 19/10/17.
@@ -25,10 +30,33 @@ public class PageRank {
         System.out.println();
         System.out.println();
 
-       ScoreRank score = new ScoreRank(gauss.getMatrice()); // On passe le tableau de matrice pour construire le score.
+        ScoreRank score = new ScoreRank(gauss.getMatrice()); // On passe le tableau de matrice pour construire le score.
         double tabScore[] = score.getScore(); // On peut récuperer le score dans un tableau
 
         score.afficher();
+
+        Set<Pair> scoresTries = new TreeSet<Pair>(new Comparator<Pair>() {
+            public int compare(Pair o1, Pair o2) {
+                int res = o2.getValeur().compareTo(o1.getValeur());
+                if(res == 0)
+                    return 1;
+                else return res;
+            }
+        });
+
+        int i = 1;
+        for(double val: score.getScore()){
+            scoresTries.add(new Pair("x"+i, val));
+            ++i;
+        }
+
+        System.out.println();
+        System.out.println("Affichage croissant des scores: ");
+        for(Pair p: scoresTries)
+            System.out.println(p.toString());
+
+
+
 
     }
 }
